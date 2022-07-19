@@ -9,7 +9,7 @@ function getBotResponse(input) {
     }
 
     // Simple responses
-    if (input == "hello") {
+    if (input == "hello"||input=="Hello") {
         return "Hello there!";
     } else if (input == "goodbye") {
         return "Talk to you later!";
@@ -22,6 +22,27 @@ function getBotResponse(input) {
     {
         return "My name Sam";
     }
+    else if(input=="I love this")
+    {
+        return "Thanks!";
+    }
+    else if(input=="🧡")
+    {
+        return "🧡";
+    }
+    else if(input=="Ok"||input=="Ok")
+    {
+        return "Thanks!....Is there any query(Yes/No)?";
+        if(input=="Yes")
+        {
+            return "Thanks!";
+        }
+        else
+        {
+            return "Tell me how can I help you.";
+        }
+    }
+    
      else {
         return "Try asking something else!";
     }
